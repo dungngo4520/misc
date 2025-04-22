@@ -1,12 +1,7 @@
-﻿// src.cpp : Defines the entry point for the application.
-//
-
-#include "src.h"
-
-using namespace std;
+﻿#include <fmt/std.h>
 
 int main()
 {
-	cout << "Hello CMake." << endl;
-	return 0;
+    fmt::println("Hello, world!");
+    return 0;
 }

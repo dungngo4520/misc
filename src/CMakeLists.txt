@@ -1,10 +1,21 @@
-﻿# CMakeList.txt : CMake project for src, include source and define
-# project specific logic here.
-#
+﻿function(add_dependencies file_name)
+	find_package(fmt CONFIG REQUIRED)
+	target_link_libraries(${file_name} PRIVATE fmt::fmt)
+endfunction()
 
-# Add source to this project's executable.
-add_executable (src "src.cpp" "src.h")
+function(compile_cpp_file file_path)
+	get_filename_component(file_name "${file_path}" NAME_WE)
 
-if (CMAKE_VERSION VERSION_GREATER 3.12)
-  set_property(TARGET src PROPERTY CXX_STANDARD 20)
-endif()
+	message(STATUS "Compiling ${file_path} ---> ${file_name}")
+
+	add_executable(${file_name} "${file_path}")
+
+	set_target_properties(${file_name} PROPERTIES CXX_STANDARD 20 CXX_STANDARD_REQUIRED YES)
+
+	add_dependencies(${file_name})
+endfunction()
+
+file(GLOB_RECURSE all_files RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} "*.cpp")
+foreach(cpp_file ${all_files})
+	compile_cpp_file(${cpp_file})
+endforeach()

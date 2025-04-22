@@ -1,0 +1,181 @@
+TabWidth: 4
+IndentWidth: 4
+UseTab: Never
+ColumnLimit: 120
+Language: Cpp
+Standard: Cpp11
+
+AccessModifierOffset: -4
+
+AlignAfterOpenBracket: BlockIndent
+AlignConsecutiveAssignments: false
+AlignConsecutiveDeclarations: false
+AlignEscapedNewlines: Left
+AlignOperands: Align
+AlignTrailingComments: true
+
+AllowAllParametersOfDeclarationOnNextLine: false
+
+AllowShortBlocksOnASingleLine: Never
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: true
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLambdasOnASingleLine: All
+AllowShortLoopsOnASingleLine: false
+
+AlwaysBreakAfterDefinitionReturnType: None
+AlwaysBreakAfterReturnType: None
+AlwaysBreakBeforeMultilineStrings: false
+AlwaysBreakTemplateDeclarations: true
+
+BinPackArguments: false
+BinPackParameters: false
+CompactNamespaces: false
+PackConstructorInitializers: CurrentLine
+ExperimentalAutoDetectBinPacking: true
+
+BreakBeforeBraces: Stroustrup
+BreakBeforeBinaryOperators: None
+BreakBeforeTernaryOperators: true
+BreakConstructorInitializers: AfterColon
+BreakStringLiterals: true
+
+ConstructorInitializerIndentWidth: 4
+ContinuationIndentWidth: 4
+Cpp11BracedListStyle: false
+
+IndentCaseLabels: true
+IndentWrappedFunctionNames: true
+
+FixNamespaceComments: true
+KeepEmptyLinesAtTheStartOfBlocks: false
+MaxEmptyLinesToKeep: 2
+NamespaceIndentation: All
+
+PenaltyBreakAssignment: 10
+PenaltyBreakBeforeFirstCallParameter: 30
+PenaltyBreakComment: 10
+PenaltyBreakString: 10
+PenaltyExcessCharacter: 100
+PenaltyReturnTypeOnItsOwnLine: 5
+
+DerivePointerAlignment: true
+PointerAlignment: Left
+
+ReflowComments: false
+
+SpaceAfterCStyleCast: false
+SpaceAfterLogicalNot: false
+SpaceAfterTemplateKeyword: true
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeCpp11BracedList: false
+SpaceBeforeInheritanceColon: true
+SpaceBeforeParens: ControlStatements
+SpaceInEmptyParentheses: false
+SpacesBeforeTrailingComments: 2
+SpacesInAngles: Never
+SpacesInContainerLiterals: true
+SpacesInCStyleCastParentheses: false
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+
+SortUsingDeclarations: true
+SortIncludes: false
+IncludeBlocks: Preserve
+InsertNewlineAtEOF: true
+
+AttributeMacros:
+  [
+    "_In_",
+    "_Out_",
+    "_Inout_",
+    "_In_opt_",
+    "_In_z",
+    "_Inout_z",
+    "_In_opt_",
+    "_Out_opt_",
+    "_Inout_opt_",
+    "_In_opt_z_",
+    "_Inout_opt_z_",
+    "_In_reads_opt_",
+    "_In_reads_bytes_opt_",
+    "_In_reads_opt_z_",
+    "_Out_writes_opt_",
+    "_Out_writes_opt_z_",
+    "_Inout_updates_opt_",
+    "_Inout_updates_bytes_opt_",
+    "_Inout_updates_opt_z_",
+    "_Out_writes_to_opt_",
+    "_Out_writes_bytes_to_opt_",
+    "_Out_writes_all_opt_",
+    "_Out_writes_bytes_all_opt_",
+    "_Inout_updates_to_opt_",
+    "_Inout_updates_bytes_to_opt_",
+    "_Inout_updates_all_opt_",
+    "_Inout_updates_bytes_all_opt_",
+    "_In_reads_to_ptr_opt_",
+    "_In_reads_to_ptr_opt_z_",
+    "_Out_writes_to_ptr_opt_",
+    "_Out_writes_to_ptr_opt_z_",
+    "_Outptr_",
+    "_Outptr_opt_",
+    "_Outptr_result_maybenull_",
+    "_Outptr_opt_result_maybenull_",
+    "_Outptr_result_z_",
+    "_Outptr_opt_result_z_",
+    "_Outptr_result_maybenull_z_",
+    "_Outptr_opt_result_maybenull_z_",
+    "_COM_Outptr_",
+    "_COM_Outptr_opt_",
+    "_COM_Outptr_result_maybenull_",
+    "_COM_Outptr_opt_result_maybenull_",
+    "_Result_nullonfailure_",
+    "_Result_zeroonfailure_",
+    "_Outptr_result_nullonfailure_",
+    "_Outptr_opt_result_nullonfailure_",
+    "_Outref_result_nullonfailure_",
+    "_Ret_z_",
+    "_Ret_maybenull_",
+    "_Ret_maybenull_z_",
+    "_Ret_null_",
+    "_Ret_notnull_",
+    "_Ret_writes_bytes_to_",
+    "_Ret_writes_bytes_maybenull_",
+    "_Ret_writes_bytes_to_maybenull_",
+  ]
+
+StatementMacros:
+  [
+    "EXTERN_C",
+    "PAGED",
+    "PAGEDX",
+    "NONPAGED",
+    "PNPCODE",
+    "INITCODE",
+    "_At_",
+    "_When_",
+    "_Success_",
+    "_Check_return_",
+    "_Must_inspect_result_",
+    "_IRQL_requires_",
+    "_IRQL_requires_max_",
+    "_IRQL_requires_min_",
+    "_IRQL_saves_",
+    "_IRQL_restores_",
+    "_IRQL_saves_global_",
+    "_IRQL_restores_global_",
+    "_IRQL_raises_",
+    "_IRQL_lowers_",
+    "_Acquires_lock_",
+    "_Releases_lock_",
+    "_Acquires_exclusive_lock_",
+    "_Releases_exclusive_lock_",
+    "_Acquires_shared_lock_",
+    "_Releases_shared_lock_",
+    "_Requires_lock_held_",
+    "_Use_decl_annotations_",
+    "_Guarded_by_",
+    "__drv_preferredFunction",
+    "__drv_allocatesMem",
+    "__drv_freesMem",
+  ]
