@@ -1,5 +1,11 @@
 {
   "dependencies": [
-    "fmt"
+    "abseil",
+    "cli11",
+    "flatbuffers",
+    "fmt",
+    "gtest",
+    "spdlog",
+    "libevent"
   ]
 }
