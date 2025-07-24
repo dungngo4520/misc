@@ -1,4 +1,4 @@
-﻿function(add_dependencies file_name)
+function(add_dependencies file_name)
 	# packages
 	find_package(fmt CONFIG REQUIRED)
 
@@ -15,7 +15,7 @@ function(compile_cpp_file file_path)
 
 	message(STATUS "Generate build config: ${file_path} ---> ${file_name}")
 
-	add_executable(${file_name} "${file_path}")
+	add_library(${file_name} STATIC "${file_path}")
 
 	set_target_properties(${file_name} PROPERTIES CXX_STANDARD 20 CXX_STANDARD_REQUIRED YES)
 
